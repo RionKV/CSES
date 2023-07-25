@@ -57,10 +57,10 @@ int32_t main() {
         if (dsu.find(a) != dsu.find(b)) {
             dsu.unite(a, b);
             numComponents--;
- 
-            // Update the largest component size
-            largestComponent = max(largestComponent, dsu.getSize(a));
         }
+     
+        // Update the largest component size
+        largestComponent = max(largestComponent, dsu.getSize(a));
  
         // Output the number of components and the size of the largest component
         cout << numComponents << " " << largestComponent << '\n';
